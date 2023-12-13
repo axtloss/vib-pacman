@@ -19,6 +19,11 @@ jobs:
       with:
         go-version: 1.19
 
+    - name: Test
+      run: |
+        go get ./...
+        go test -v ./...
+
     - name: Build
       run: |
         go get ./...
