@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: |
         go get ./...
-        go build -v ./... -trimpath -buildmode=plugin
+        go build -trimpath -buildmode=plugin -v ./...
 
     - name: Upload a Release Asset
       uses: softprops/action-gh-release@v1
